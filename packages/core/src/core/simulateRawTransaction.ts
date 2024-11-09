@@ -1,4 +1,4 @@
-import { Connection, PublicKey, SimulatedTransactionResponse, Transaction } from '@solana/web3.js';
+import { Connection, PublicKey, SimulatedTransactionResponse, VersionedTransaction } from '@solana/web3.js';
 
 // Simulate a signed, serialized transaction before broadcasting
 export async function simulateRawTransaction(
@@ -22,9 +22,13 @@ export async function simulateRawTransaction(
      */
     const simulated = await Connection.prototype.simulateTransaction.call(
         connection,
-        Transaction.from(rawTransaction),
-        undefined,
-        includeAccounts
+        VersionedTransaction.deserialize(rawTransaction),
+        includeAccounts ? {
+            accounts: {
+                encoding: 'base64',
+                addresses: Array.isArray(includeAccounts) ? includeAccounts.map(pk => pk.toString()) : []
+            }
+        } : undefined
     );
     if (simulated.value.err) throw new Error('Simulation error');
 

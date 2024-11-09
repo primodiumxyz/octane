@@ -2,5 +2,4 @@
 !packages
 !config.json
 !package.json
-!lerna.json
-!yarn.lock
+!pnpm-lock.yaml

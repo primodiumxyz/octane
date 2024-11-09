@@ -1,9 +1,9 @@
 {
     "private": true,
-    "name": "@solana/octane-server",
-    "version": "0.1.0-alpha.0",
-    "author": "Solana Maintainers <maintainers@solana.foundation>",
-    "repository": "https://github.com/solana-labs/octane",
+    "name": "@primodiumxyz/octane-server",
+    "version": "0.0.1",
+    "description": "Octane server implementation - Fork of @solana/octane-server with improvements",
+    "repository": "https://github.com/primodiumxyz/octane",
     "license": "Apache-2.0",
     "publishConfig": {
         "access": "public"
@@ -18,9 +18,9 @@
         "cli": "dotenv -c -- node .next/server/cli.js"
     },
     "dependencies": {
-        "@solana/octane-core": "*",
+        "@solana/octane-core": "workspace:*",
         "@solana/spl-token": "^0.2.0",
-        "@solana/web3.js": "^1.48.0",
+        "@solana/web3.js": "1",
         "axios": "^0.27.2",
         "bs58": "^5.0.0",
         "cache-manager": "^4.1.0",

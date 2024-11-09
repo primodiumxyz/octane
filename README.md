@@ -116,7 +116,7 @@ Also, you can run your own Octane node and promote it among developers.
 
 ### Internals
 
-Octane is built as a monorepo with multiple packages using [Lerna](https://lerna.js.org/).
+Octane is built as a monorepo with multiple packages using pnpm workspaces.
 
 [Core](https://github.com/solana-labs/octane/tree/master/packages/core) package provides reusable functions that process and sign transactions ("actions").
 
