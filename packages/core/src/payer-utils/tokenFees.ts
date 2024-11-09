@@ -17,7 +17,8 @@ export async function getLamportsPerSignature(connection: Connection): Promise<n
     const transaction = new Transaction();
     transaction.feePayer = Keypair.generate().publicKey;
     transaction.recentBlockhash = (await connection.getLatestBlockhash()).blockhash;
-    return (await connection.getFeeForMessage(transaction.compileMessage())).value;
+    const fee = await connection.getFeeForMessage(transaction.compileMessage());
+    return fee?.value ?? 0;
 }
 
 export function createTokenFee(
