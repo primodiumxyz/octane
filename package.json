@@ -2,19 +2,18 @@
     "name": "root",
     "private": true,
     "scripts": {
-        "bootstrap": "lerna bootstrap",
-        "dev": "lerna run --stream dev",
-        "start": "lerna run --stream start",
-        "build": "lerna run build",
-        "test": "lerna run test",
-        "test:live": "lerna run test:live",
-        "test:live-with-test-validator": "lerna run test:live-with-test-validator",
-        "lint": "lerna run --stream --no-bail lint",
-        "lint:fix": "lerna run --stream --no-bail lint:fix",
-        "cli": "lerna run --stream cli --scope @solana/octane-server --no-prefix -- --"
+        "bootstrap": "pnpm install",
+        "dev": "pnpm -r run dev",
+        "start": "pnpm -r run start",
+        "build": "pnpm -r run build",
+        "test": "pnpm -r run test",
+        "test:live": "pnpm -r run test:live",
+        "test:live-with-test-validator": "pnpm -r run test:live-with-test-validator",
+        "lint": "pnpm -r run lint",
+        "lint:fix": "pnpm -r run lint:fix",
+        "cli": "pnpm --filter @solana/octane-server run cli --"
     },
     "devDependencies": {
-        "lerna": "^5.4.0",
         "@typescript-eslint/eslint-plugin": "^5.30.6",
         "@typescript-eslint/parser": "^5.30.6",
         "eslint": "^8.19.0",
@@ -23,8 +22,5 @@
         "prettier": "^2.7.1",
         "ts-node": "^10.4.0",
         "typescript": "^4.7.4"
-    },
-    "workspaces": [
-        "packages/*"
-    ]
+    }
 }

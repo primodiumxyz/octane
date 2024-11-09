@@ -18,7 +18,7 @@
         "cli": "dotenv -c -- node .next/server/cli.js"
     },
     "dependencies": {
-        "@solana/octane-core": "https://gitpkg.now.sh/solana-labs/octane/packages/core?630a8d6afc90d2fe5aad88db2dc56c880cdbb5ad&scripts.postinstall=yarn%20install%20--ignore-scripts%20%26%26%20yarn%20run%20build",
+        "@solana/octane-core": "workspace:*",
         "@solana/spl-token": "^0.2.0",
         "@solana/web3.js": "1",
         "axios": "^0.27.2",

@@ -33,9 +33,7 @@ git clone https://github.com/<YOUR_GITHUB_USERNAME>/octane
 
 cd octane
 
-yarn install
-# OR #
-npm install
+pnpm install
 ```
 
 ## 3. Configure the environment variables
