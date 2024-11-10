@@ -6,7 +6,7 @@ import {
     validateAccountInitializationInstructions,
     validateTransaction,
     validateTransfer,
-} from '../core';
+} from '../core-functions';
 import { Cache } from 'cache-manager';
 import base58 from 'bs58';
 

@@ -1,5 +1,5 @@
 import { Connection, Keypair, LAMPORTS_PER_SOL, PublicKey, Transaction } from '@solana/web3.js';
-import { TokenFee } from '../core';
+import { TokenFee } from '../core-functions';
 import { TokenPriceInfo } from './jupiter';
 import { getAssociatedTokenAddress, getMint, Mint } from '@solana/spl-token';
 

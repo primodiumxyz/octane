@@ -1,6 +1,6 @@
 import { Connection, Keypair, Transaction } from '@solana/web3.js';
 import type { Cache } from 'cache-manager';
-import { simulateRawTransaction, MessageToken } from '../core';
+import { simulateRawTransaction, MessageToken } from '../core-functions';
 import base58 from 'bs58';
 
 /**

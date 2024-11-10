@@ -12,7 +12,7 @@ import {
 import { Percentage } from '@orca-so/common-sdk';
 import type { Cache } from 'cache-manager';
 
-import { simulateRawTransaction, isMainnetBetaCluster, MessageToken } from '../core';
+import { simulateRawTransaction, isMainnetBetaCluster, MessageToken } from '../core-functions';
 import { whirlpools } from '../swapProviders';
 
 export type FeeOptions = {
