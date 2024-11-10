@@ -1,6 +1,6 @@
 import { Connection, Keypair } from '@solana/web3.js';
 import { getAccount, NATIVE_MINT } from '@solana/spl-token';
-import { TokenFee } from '../core-functions';
+import { TokenFee } from '../core';
 import { getRoutes, getSwapTransactions, Route } from './jupiter';
 
 export async function loadSwapRoutesForTokenFees(

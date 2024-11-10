@@ -1,5 +1,5 @@
 import { Connection, Keypair, PublicKey } from '@solana/web3.js';
-import { TokenFee } from '../core-functions';
+import { TokenFee } from '../core';
 import { createAssociatedTokenAccount, getAssociatedTokenAddress } from '@solana/spl-token';
 
 export type CreateAccount = {

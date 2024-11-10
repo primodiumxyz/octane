@@ -8,7 +8,7 @@ import {
     validateTransfer,
     TokenFee,
     validateInstructions,
-} from '../core-functions';
+} from '../core';
 
 /**
  * Sign transaction by fee payer if the first instruction is a transfer of token fee to given account
