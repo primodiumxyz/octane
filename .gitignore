@@ -14,4 +14,3 @@ node_modules/
 next-env.d.ts
 
 test-ledger
-dist/
