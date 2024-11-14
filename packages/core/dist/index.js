@@ -30,4 +30,3 @@ exports.PayerUtils = exports.core = void 0;
 __exportStar(require("./actions"), exports);
 exports.core = __importStar(require("./core"));
 exports.PayerUtils = __importStar(require("./payer-utils"));
-__exportStar(require("./swapProviders"), exports);

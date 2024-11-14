@@ -18,7 +18,7 @@
         "cli": "dotenv -c -- node .next/server/cli.js"
     },
     "dependencies": {
-        "@solana/octane-core": "workspace:*",
+        "@primodiumxyz/octane-core": "workspace:*",
         "@solana/spl-token": "^0.2.0",
         "@solana/web3.js": "1",
         "axios": "^0.27.2",
@@ -26,6 +26,7 @@
         "cache-manager": "^4.1.0",
         "commander": "^9.4.0",
         "cors": "^2.8.5",
+        "decimal.js": "^10.4.3",
         "express": "^4.18.1",
         "express-rate-limit": "^6.4.0",
         "next": "^12.1.0",
