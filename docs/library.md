@@ -2,14 +2,6 @@
 
 You can use Octane as a Node.js library for your backend application. You'll be able to use methods for transaction validation, signing and fee payer account management (for example, swapping token fees to SOL).
 
-## Install
-
-Currently, Octane isn't available on NPM. You can install it from the git repo using GitPkg:
-
-```
-yarn add 'https://gitpkg.now.sh/solana-labs/octane/packages/core?630a8d6afc90d2fe5aad88db2dc56c880cdbb5ad&scripts.postinstall=yarn%20install%20--ignore-scripts%20%26%26%20yarn%20run%20build'
-```
-
 ## Methods
 
 ### Actions
